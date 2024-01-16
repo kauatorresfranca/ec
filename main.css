@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(66, 66, 219);
+    padding: 16px 0;
+}
+
+header h1{
+    color: #fff;
+    margin: 0 32px;
+}
+
+nav li{
+    display: inline;
+    margin-right: 16px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#sobreloja{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+    margin: 36px auto 0 auto
+}
+
+#sobreloja img{
+    width: 640px;
+}
+
+#text{
+    margin-left: 16px;
+}
+
+#text h2{
+    margin-bottom: 32px;
+    border-bottom: 2px solid rgb(66, 66, 219);
+}
+
+.titulo{
+    margin: 16px auto;
+    border-bottom: 2px solid rgb(66, 66, 219);
+    justify-content: center;
+    max-width: 1280px;
+    width: 100%;
+}
+
+/*#products{
+    margin: 0 auto;
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    justify-content: space-between;
+}*/
+
+.produto img{
+    width: 400px;
+}
+
+.produto{
+    max-width: 33%;
+    max-height: 33%;
+}
+
+.produto button{
+    width: 400px;
+    padding: 12px;
+    background-color: rgb(66, 66, 219);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.produto button:hover{
+    background-color: rgb(138, 138, 223);
+}
+
+#products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr
+}
+
+.produto {
+    flex: 1;
+    margin: 10px;
+}
+
+@media screen and (max-width:640px){
+    #sobreloja{
+        display:block
+    }
+    #sobreloja img{
+        width: 400px;
+    }
+    .imgloja{
+        text-align: center;
+    }
+
+    #products{
+        display: block;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1023px){
+    #sobreloja{
+        display:block
+    }
+    #sobreloja img{
+        width: 600px;
+    }
+    .imgloja{
+        text-align: center;
+    }
+    #products{
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+}
